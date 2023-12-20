@@ -1,39 +1,16 @@
 
-// // ////////////////////////////////////////////
-// var owl = $('#slider_1');
-// owl.owlCarousel({
-//     items:4, 
-//   // items change number for slider display on desktop
-  
-//     loop:true,
-//     margin:10,
-//     navigation: true,
-//     autoplay: true,
-//     smartSpeed: 800,
-//     rtl:true,
-//     nav: true,
-//     navElement: "dots",
-//     navText:[`<i class="fa-solid fa-chevron-right"></i>` , `<i class="fa-solid fa-chevron-left"></i>`],
-//     paginationSpeed : 800,
-//     dots: true,  
-//     dotsEach:true,
-//     responsive:{
-//         0:{
-//             items: 1,
-//         },
-//         600:{
-//             items: 1,
-//         },
-//         1100:{
-//             items: 1,
-//         },
-//         1200:{
-//             items:1
-//         }
-//     }
-// });
-// // /////////
+//////////////////////////
+window.addEventListener("load", function () {
+    let loading = document.getElementById("loading");
+    document.body.style.overflow = "hidden";
+    
+    setTimeout(function () {
+        loading.style.display = "none";
+        document.body.style.overflow = "auto";
+    },1000);
 
+})
+// /////////////////////
 
 
 (function($) { "use strict";
@@ -80,18 +57,7 @@
 })(jQuery); 
 
 
-//////////////////////////
-window.addEventListener("load", function () {
-    let loading = document.getElementById("loading");
-    document.body.style.overflow = "hidden";
-    
-    setTimeout(function () {
-        loading.style.display = "none";
-        document.body.style.overflow = "auto";
-    },1000);
 
-})
-// /////////////////////
 window.addEventListener("scroll", function () {
     let nav = document.querySelector(".navbar");
     nav.classList.toggle("fix", window.scrollY > 150);
@@ -99,4 +65,3 @@ window.addEventListener("scroll", function () {
 //////////////////////////
 
 // ////////////////
-

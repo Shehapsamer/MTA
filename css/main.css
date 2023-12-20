@@ -1441,7 +1441,7 @@ button:hover{
    transition: all linear .3s;
    right: 0;
    top: 0;
-   background-color: #ffffff;
+   background-color: var(--main_bgColor);
    z-index: 6516516161651;
    display: flex;
    justify-content: center;
@@ -1471,7 +1471,7 @@ button:hover{
   bottom: 0;
   margin: auto;
   border: 3px solid;
-  border-color: transparent transparent #FF3D00 #FF3D00;
+  border-color: transparent transparent var(--btnColor);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -1483,7 +1483,7 @@ button:hover{
 .loader::before {
   width: 32px;
   height: 32px;
-  border-color: var(--main_bgColor) var(--main_bgColor) transparent transparent;
+  border-color: var(--btnColor) var(--btnColor) transparent transparent;
   animation: rotation 1.5s linear infinite;
 }
 
