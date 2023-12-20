@@ -1,16 +1,5 @@
 
-//////////////////////////
-window.addEventListener("load", function () {
-    let loading = document.getElementById("loading");
-    document.body.style.overflow = "hidden";
-    
-    setTimeout(function () {
-        loading.style.display = "none";
-        document.body.style.overflow = "auto";
-    },1000);
 
-})
-// /////////////////////
 
 
 (function($) { "use strict";
@@ -57,11 +46,22 @@ window.addEventListener("load", function () {
 })(jQuery); 
 
 
+//////////////////////////
+window.addEventListener("load", function () {
+    let loading = document.getElementById("loading");
+    document.body.style.overflow = "hidden";
+    
+    setTimeout(function () {
+        loading.style.display = "none";
+        document.body.style.overflow = "auto";
+    },1000);
 
+})
+// /////////////////////
 window.addEventListener("scroll", function () {
     let nav = document.querySelector(".navbar");
     nav.classList.toggle("fix", window.scrollY > 150);
 }) 
 //////////////////////////
-
+			
 // ////////////////
