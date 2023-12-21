@@ -222,7 +222,7 @@ button:hover{
   .navbar > .nav-btn {
     display: inline-block;
     position: absolute;
-    left: 10px;
+    right: 10px;
     top: calc(50% - 25px);
   }
   .navbar>.nav-header>.nav-title{
@@ -265,6 +265,9 @@ button:hover{
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
+.navbar .nav-logo img{
+  width: 100% !important;
+}
 }
 /* S1_home */
 
@@ -281,7 +284,6 @@ button:hover{
   justify-content: center;  
   position: relative;
   z-index: 1;
-
   animation-name: tranzs;
   animation-duration: 10s;
   animation-iteration-count: 1;
@@ -307,7 +309,7 @@ button:hover{
   border: var(--main_borderColor);
   border-radius: 5px;
   color: var(--body_bgColor);
-  margin: 0 10px;
+  margin: 10px;
   transition: all ease-in .3s;
 }
 
@@ -321,7 +323,6 @@ button:hover{
 @keyframes tranzs {
   0% {
   background-size: 100%;
-
   }
   
   50%{
@@ -1093,6 +1094,9 @@ button:hover{
 .contact_us_form{
   background-color: var(--main_bgColor);
 }
+.form .all_right h3{
+  color: var(--body_bgColor);
+}
 /* about_intro */
 .about_intro{
   padding: 100px 0;
@@ -1265,6 +1269,62 @@ button:hover{
  .last_foot ul li a{
   color: var(--bgColor);
  }
+/* backages */
+.pack{
+  padding: 70px 0;
+  background-color: var(--bgColor);
+}
+.pack .intro-back{
+  padding: 50px 0;
+  text-align: center;
+  border-radius: 5px;
+}
+.pack .intro-back h3{
+  font-size: 32px;
+  color: var(--btnColor);
+  text-transform: uppercase;
+}
+.pack .intro-back p{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: auto;
+}
+.pack .intro-back .bronze{
+  background-color: #CD7F32;
+}
+.pack .intro-back .silver {
+  background-color: #C0C0C0;
+}
+.pack .intro-back .gold {
+  background-color: #FFD700;
+}
+.pack .intro-back .diamond {
+  background-color: #b9f2ff;
+}
+
+.backages{
+  padding: 25px;
+  border-radius: 5px;
+  border: 2px solid var(--Secondary-color);
+  margin: 20px 0;
+}
+.pack ul li {
+  color: var(--body_bgColor);
+  margin: 10px 0 !important;
+  list-style:disc;
+}
+
+.pack ul{
+  padding: 20px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -1353,7 +1413,10 @@ button:hover{
 .S5_home .active{
   margin-top: 30px;
 }
-
+.S1_home .links{
+  display: flex;
+  flex-direction: column;
+}
 
 }
 
