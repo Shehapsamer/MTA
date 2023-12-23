@@ -377,6 +377,7 @@ button:hover{
   text-transform: uppercase;
   color: var(--textColor);
   margin-bottom: 40px;
+  height: 50px;
 }
 .box{
   margin: 20px 0;
@@ -1269,60 +1270,250 @@ button:hover{
  .last_foot ul li a{
   color: var(--bgColor);
  }
-/* backages */
-.pack{
-  padding: 70px 0;
-  background-color: var(--bgColor);
-}
-.pack .intro-back{
-  padding: 50px 0;
+/* Packages */
+.packages{
+  background-image:url(../img/pack_1.jpg) ;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  border-radius: 5px;
+  position: relative;
+  z-index: 1;
 }
-.pack .intro-back h3{
-  font-size: 32px;
-  color: var(--btnColor);
-  text-transform: uppercase;
+.packages::after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #00000081;
 }
-.pack .intro-back p{
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  margin: auto;
+.packages h1{
+  font-size: 53px;
+  color: var(--body_bgColor);
 }
-.pack .intro-back .bronze{
-  background-color: #CD7F32;
+.packages_Diamond{
+  background-image: url(../img/Diamond_1.jpeg);
 }
-.pack .intro-back .silver {
-  background-color: #C0C0C0;
+.Gold{
+  background-image: url(../img/Gold_1.jpg);
 }
-.pack .intro-back .gold {
-  background-color: #FFD700;
+.silver{
+  background-image: url(../img/silver\ poster.jpg);
 }
-.pack .intro-back .diamond {
-  background-color: #b9f2ff;
+.MTA_packages{
+  background-image: url(../img/S1_home_1.jpg);
 }
-
-.backages{
+.packages .bronzePack{
+  position: absolute;
+  width: 150px;
+  height: 80%;
+  left: 20px;
+  top: 70px;
+  background-color: var(--main_bgColor);
   padding: 25px;
   border-radius: 5px;
-  border: 2px solid var(--Secondary-color);
-  margin: 20px 0;
 }
-.pack ul li {
+.packages .LogoPack{
+  position: absolute;
+  width: 150px;
+  height: 80%;
+  right: 20px;
+  top: 70px;
+  padding: 25px;
+  border-radius: 5px;
+}
+.packages .MTA_packages_paner{
+  background-color: var(--body_bgColor) !important;
+}
+.comma {
+  background-image: url(../img/bronze_5.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 20vh;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 20px 0;
+}
+body{
+  background-color: var(--main_bgColor);
+}
+.comma::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #00000089;
+}
+.comma h2{
   color: var(--body_bgColor);
-  margin: 10px 0 !important;
-  list-style:disc;
+  margin-bottom: 30px;
+}
+.comma_Diamond{
+  background-image: url(../img/bronze_5.jpeg);
+}
+.comma ul{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.comma ul li{
+  margin: 0 10px;
+}
+.comma ul li a{
+  color: var(--body_bgColor);
+}
+.comma ul .active{
+  color: var(--body_bgColor);
+  background-color: var(--Secondary-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.S2_pack {
+  background-image: url(../img/S2_pack.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+.S3_back{
+  background-image: url(../img/bronze_2.jpeg);
+  background-position: bottom;
 }
 
-.pack ul{
-  padding: 20px;
+.S4_back{
+  background-image: url(../img/bronze_3.jpeg);
+  background-position: center;
+
+}
+.S5_back{
+  background-image: url(../img/bronze_4.jpeg);
+  background-position: center;
+  height: 90vh;
+  margin-bottom: 0;
+}
+
+.S6_back{
+  background-image: url(../img/bronze_5.jpeg);
+  background-position: center;
+  height: 40vh;
+  text-align: center;
+  margin-bottom: 0;
+}
+.S7_pack{
+    background-image: url(../img/Diamond_2.jpeg);
+}
+.S8_pack{
+    background-image: url(../img/Diamond_3.jpeg);
 }
 
 
 
 
 
+.S6_back h3{
+  color: var(--body_bgColor);
+  margin-bottom: 20px;
+}
+.S6_back p{
+  color: #ccc;
+}
+.S2_pack::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #000000a1;
+}
+.S2_pack ul{
+  display: flex;
+  list-style: disc;
+  border-left: 5px solid var(--btnColor);
+  padding-left: 10px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.S2_pack ul li {
+  margin-left: 30px;
+  color: var(--body_bgColor);
+}
+.S2_pack ul p{
+  color: var(--body_bgColor);
+}
+.S2_pack ul h4 {
+  color: var(--Secondary-color);
+  text-transform: uppercase;
+}
+.S2_pack hr{
+  width: 70%;
+  color: var(--btnColor);
+}
+/* packages_all */
+.packages_all{
+  padding: 70px 0;
+  background-color: var(--bgColor);
+  text-align: center;
+}
+.packages_all h3{
+  margin: 20px 0;
+  color: var(--body_bgColor);
+}
+.packages_all span{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+.packages_all .BRONZE{
+  background-color: #CD7F32;
+}
+.packages_all .Silver {
+  background-color: #C0C0C0;
+}
+.packages_all .Golda {
+  background-color: #FFD700;
+}
+.packages_all .Diamond {
+  background-color: #b9f2ff;
+}
+.packages_all .MTA_Package {
+  background-color: #cfcfcf;
+}
+.packages_all a{
+  padding: 10px 40px;
+  background-color: var(--btnColor);
+  color: var(--main_bgColor);
+  border-radius: 5px;
+}
+.packages_all p{
+  margin: 30px 0;
+}
+.packages_all .box{
+  border: 2px solid var(--Secondary-color);
+  border-radius: 5px;
+  padding: 30px 0;
+}
 
 
 
