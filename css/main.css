@@ -12,7 +12,7 @@
   --textColor: #fff;
   --Secondary-color:#c0a475;
   --bgColor: #414651;
-  --pragrafColor: #70747d;
+  --pragrafColor: #ccc;
   --body_bgColor: #ffffff;
   --main_borderColor: 1px solid rgba(210, 210, 210, 0.589);
 }
@@ -391,7 +391,6 @@ button:hover{
   display: flex;
 
 }
-
 .S3_home .box img{
   width: 250px;
   height: 300px;
@@ -413,6 +412,11 @@ button:hover{
 }
 .S3_home p{
   margin-bottom: 20px ;
+}
+.S3_home li{
+  list-style: disc ;
+  color: var(--body_bgColor);
+  margin: 20px 0;
 }
 /* S4_home */
 .S4_home{
@@ -445,12 +449,14 @@ button:hover{
   padding-left: 50px;
 }
 .S4_home .box_2 h3{
-  color: var(--textColor);
+  color: var(--Secondary-color);
   text-transform: uppercase;
-  margin-top: 20px;
+}
+.S4_home .box_2 h4{
+  color: var(--textColor);
 }
 .S4_home .box_2 p{
-  margin-bottom: 40px ;
+  margin-bottom: 20px ;
 }
 /* S5_home */
 .S5_home{
@@ -459,7 +465,7 @@ button:hover{
 }
 .S5_home h3{
   margin: 20px 0;
-  color: var(--textColor);
+  color: var(--Secondary-color);
 }
 .S5_home p{
   margin: 20px 0;
@@ -485,7 +491,15 @@ button:hover{
 .S5_home .box:hover h3{
   color: var(--main_bgColor);
 }
-
+.S5_home ul li{
+  list-style: disc ;
+  color: var(--body_bgColor);
+  margin: 10px 0;
+  line-height: 1.8;
+}
+.S5_home p{
+  color: var(--btnColor);
+}
 
 .S5_home .box svg{
   font-size: 30px;
@@ -1068,7 +1082,9 @@ button:hover{
   font-size: 27px;
   margin-right: 20px;
 }
-
+.form .all_right a{
+  color: var(--body_bgColor);
+}
 .form .all_right h3 {
   font-size: 16px;
   color: #2a2a2a;
@@ -1152,9 +1168,10 @@ button:hover{
 .why_us  li{
   color: var(--body_bgColor);
   margin: 10px 0;
+  /* list-style: decimal; */
 }
 .why_us  svg{
-  color: var(--btnColor);
+  color: var(--Secondary-color  );
   margin-right: 20px  ;
 }
 /* customer */
@@ -1385,7 +1402,8 @@ body{
   background-image: url(../img/S2_pack.jpg);
   background-position: center;
   background-size: cover;
-  height: 70vh;
+  height: auto !important; 
+  padding: 30px 0;
   width: 100%;
   display: flex;
   align-items: center;
@@ -1406,7 +1424,7 @@ body{
 .S5_back{
   background-image: url(../img/bronze_4.jpeg);
   background-position: center;
-  height: 90vh;
+  height: 120vh;
   margin-bottom: 0;
 }
 
@@ -1450,12 +1468,14 @@ body{
   list-style: disc;
   border-left: 5px solid var(--btnColor);
   padding-left: 10px;
+  align-items: center;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
 }
 .S2_pack ul li {
   margin-left: 30px;
   color: var(--body_bgColor);
+  width: 70%;
 }
 .S2_pack ul p{
   color: var(--body_bgColor);
@@ -1463,10 +1483,13 @@ body{
 .S2_pack ul h4 {
   color: var(--Secondary-color);
   text-transform: uppercase;
+  width: 30%;
 }
 .S2_pack hr{
   width: 70%;
   color: var(--btnColor);
+  height: 10px;
+  border-radius: 5px;
 }
 /* packages_all */
 .packages_all{
@@ -1514,7 +1537,11 @@ body{
   border-radius: 5px;
   padding: 30px 0;
 }
-
+.packages_all img{
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 5px;
+}
 
 
 
@@ -1609,6 +1636,19 @@ body{
   flex-direction: column;
 }
 
+.S2_pack ul {
+  display: flex;
+  flex-direction: column;
+
+}
+.S2_pack ul h4 , .S2_pack ul li  {
+  width: 90%;
+  
+}
+.S2_pack ul h4{
+  width: 100%;
+  margin-bottom: 20px;
+}
 }
 
 
@@ -1688,6 +1728,7 @@ body{
  }
 
  /* loading-screan */
+/*  
  .loading-screan {
    position: fixed;
    width: 100%;
@@ -1739,7 +1780,7 @@ body{
   height: 32px;
   border-color: var(--btnColor) var(--btnColor) transparent transparent;
   animation: rotation 1.5s linear infinite;
-}
+} */
 
 @keyframes rotation {
   0% {
