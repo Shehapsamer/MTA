@@ -363,6 +363,7 @@ button:hover{
   height: 100%;
   background-color: #0000006e;
   border-radius: 10px;
+  transition: all ease-in-out .3s;
 }
 .S2_home .imgas img{
   height: 100%;
@@ -371,6 +372,9 @@ button:hover{
 }
 .S2_home .imgas:hover img{
   transform: scale(1.1);
+}
+.S2_home .imgas:hover::after{
+  border-radius: 0px;
 }
 .S2_home h3{
   margin: 20px 0;
@@ -482,8 +486,8 @@ button:hover{
 .S5_home .active{
   background-color: var(--body_bgColor);
 }
-.S5_home .active svg ,.S5_home .active h3{
-  color: var(--main_bgColor);
+.S5_home img{
+  border-radius: 10px;
 }
 .S5_home .box:hover{
   background-color: var(--body_bgColor);
